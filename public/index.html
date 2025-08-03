@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Key Manager</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="create-box">
+      <h2>+ CREATE KEY</h2>
+      <input id="uid" type="text" placeholder="Device UID" />
+      <input id="days" type="number" min="1" placeholder="Expired Days" />
+      <button onclick="generateKey()">GENERATE KEY</button>
+    </div>
+
+    <div class="list-box">
+      <h3>KEY LIST</h3>
+      <table id="keyTable">
+        <thead>
+          <tr>
+            <th>KEY</th>
+            <th>DEVICE</th>
+            <th>CREATED</th>
+            <th>EXPIRES</th>
+            <th>ACTION</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dynamic rows -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
